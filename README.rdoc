@@ -6,11 +6,15 @@ This ensures that devise[http://github.com/plataformatec/devise] will update a l
 
 rails g devise_lastseenable
 
-In your model, add :traceable as such:
+In your model, add :lastseenable as such:
 
 class User < ActiveRecord::Base
   devise ..., :lastseenable
 end
+
+== Thanks to
+
+Thanks to devise_traceable[https://github.com/shenoudab/devise_traceable] for essentially operating as the base for this gem!
 
 == Copyright
 
