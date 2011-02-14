@@ -4,9 +4,9 @@ module Devise
   module Models
     module Lastseenable
       def stamp!
-        if self.last_seen.to_i < (Time.now - 5.minutes).to_i
-          self.last_seen = DateTime.now
-          self.save!
+        if current_user.last_seen.to_i < Time.now - 5.minutes
+          current_user.last_seen = DateTime.now
+          current_user.save!
         end
       end
     end
