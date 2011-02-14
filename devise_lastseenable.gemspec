@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "devise_lastseenable.gemspec",
     "lib/devise_lastseenable.rb",
     "lib/devise_lastseenable/hooks/lastseenable.rb",
     "lib/devise_lastseenable/model.rb",
