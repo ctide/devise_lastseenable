@@ -15,14 +15,13 @@ Jeweler::Tasks.new do |gem|
   gem.name = "devise_lastseenable"
   gem.homepage = "http://github.com/ctide/devise_lastseenable"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "chris@pulsetracer.com"
+  gem.summary = "This ensures that devise will update a last_seen flag on the model whenever you check if a user is authed."
+  gem.description = "This ensures that devise will update a last_seen flag on the model whenever you check if a user is authed."
+  gem.email = "christide@christide.com"
   gem.authors = ["ctide"]
-  # Include your dependencies below. Runtime dependencies are required when using your gem,
-  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.add_runtime_dependency 'warden'
+  gem.add_runtime_dependency 'devise'
+  gem.add_runtime_dependency 'rails', '>= 3.0.4'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
