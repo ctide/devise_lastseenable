@@ -6,3 +6,4 @@ doc
 pkg
 test
 .DS_Store
+Gemfile.lock
