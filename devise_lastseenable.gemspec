@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{devise_lastseenable}
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["ctide"]
-  s.date = %q{2011-02-14}
+  s.date = %q{2011-09-01}
   s.description = %q{This ensures that devise will update a last_seen flag on the model whenever you check if a user is authed.}
   s.email = %q{christide@christide.com}
   s.extra_rdoc_files = [
@@ -19,7 +19,6 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
-    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
@@ -38,7 +37,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/ctide/devise_lastseenable}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.5.0}
+  s.rubygems_version = %q{1.6.2}
   s.summary = %q{This ensures that devise will update a last_seen flag on the model whenever you check if a user is authed.}
   s.test_files = [
     "test/helper.rb",
