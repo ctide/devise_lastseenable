@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "devise_lastseenable"
-  s.version = "0.0.4"
+  s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["ctide"]
-  s.date = "2011-09-01"
+  s.date = "2015-06-02"
   s.description = "This ensures that devise will update a last_seen flag on the model whenever you check if a user is authed."
   s.email = "christide@christide.com"
   s.extra_rdoc_files = [
@@ -37,12 +37,8 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/ctide/devise_lastseenable"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.23"
   s.summary = "This ensures that devise will update a last_seen flag on the model whenever you check if a user is authed."
-  s.test_files = [
-    "test/helper.rb",
-    "test/test_devise_lastseenable.rb"
-  ]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
@@ -52,9 +48,8 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<warden>, [">= 0"])
       s.add_runtime_dependency(%q<devise>, [">= 0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
+      s.add_development_dependency(%q<bundler>, [">= 0"])
+      s.add_development_dependency(%q<jeweler>, [">= 0"])
       s.add_runtime_dependency(%q<warden>, [">= 0"])
       s.add_runtime_dependency(%q<devise>, [">= 0"])
       s.add_runtime_dependency(%q<rails>, [">= 3.0.4"])
@@ -63,9 +58,8 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<warden>, [">= 0"])
       s.add_dependency(%q<devise>, [">= 0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
-      s.add_dependency(%q<rcov>, [">= 0"])
+      s.add_dependency(%q<bundler>, [">= 0"])
+      s.add_dependency(%q<jeweler>, [">= 0"])
       s.add_dependency(%q<warden>, [">= 0"])
       s.add_dependency(%q<devise>, [">= 0"])
       s.add_dependency(%q<rails>, [">= 3.0.4"])
@@ -75,9 +69,8 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<warden>, [">= 0"])
     s.add_dependency(%q<devise>, [">= 0"])
     s.add_dependency(%q<shoulda>, [">= 0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
-    s.add_dependency(%q<rcov>, [">= 0"])
+    s.add_dependency(%q<bundler>, [">= 0"])
+    s.add_dependency(%q<jeweler>, [">= 0"])
     s.add_dependency(%q<warden>, [">= 0"])
     s.add_dependency(%q<devise>, [">= 0"])
     s.add_dependency(%q<rails>, [">= 3.0.4"])
