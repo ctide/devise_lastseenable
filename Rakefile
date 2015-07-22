@@ -19,9 +19,6 @@ Jeweler::Tasks.new do |gem|
   gem.description = "This ensures that devise will update a last_seen flag on the model whenever you check if a user is authed."
   gem.email = "christide@christide.com"
   gem.authors = ["ctide"]
-  gem.add_runtime_dependency 'warden'
-  gem.add_runtime_dependency 'devise'
-  gem.add_runtime_dependency 'rails', '>= 3.0.4'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -32,21 +29,4 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
-
 task :default => :test
-
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "devise_lastseenable #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end
