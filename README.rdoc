@@ -1,7 +1,9 @@
 = devise_lastseenable
 
 This ensures that devise[http://github.com/plataformatec/devise] will update 
-a last_seen timestamp on the model whenever you check if a user is authed.
+a last_seen timestamp on the model whenever you check if a user is 
+authenticated.
+
 
 == Usage
 
@@ -10,7 +12,7 @@ Add to your Gemfile:
   gem 'devise_lastseenable'
 
 
-Add the necessary columns to your database. Assuming your Devise model is 
+Add the last_seen column to your database. Assuming your Devise model is 
 called User, run:
 
   rails generate devise_lastseenable User
@@ -28,6 +30,7 @@ In your model, add :lastseenable as such:
 
 Thanks to devise_traceable[https://github.com/shenoudab/devise_traceable] for 
 essentially operating as the base for this gem!
+
 
 == Copyright
 
