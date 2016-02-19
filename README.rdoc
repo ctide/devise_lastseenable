@@ -4,13 +4,22 @@ This ensures that devise[http://github.com/plataformatec/devise] will update a l
 
 == Usage
 
-rails g devise_lastseenable
+Add to your Gemfile:
 
-In your model, add :lastseenable as such:
+  gem 'devise_lastseenable'
 
-class User < ActiveRecord::Base
-  devise ..., :lastseenable
-end
+
+Add the necessary columns to your database:
+
+  rails g devise_lastseenable
+
+
+In your model, add `:lastseenable` as such:
+
+  class User < ActiveRecord::Base
+    devise ..., :lastseenable
+  end
+
 
 == Thanks to
 
