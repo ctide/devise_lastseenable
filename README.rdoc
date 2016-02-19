@@ -9,12 +9,12 @@ Add to your Gemfile:
   gem 'devise_lastseenable'
 
 
-Add the necessary columns to your database:
+Add the necessary columns to your database, run:
 
   rails g devise_lastseenable
 
 
-In your model, add `:lastseenable` as such:
+In your model, add :lastseenable as such:
 
   class User < ActiveRecord::Base
     devise ..., :lastseenable
